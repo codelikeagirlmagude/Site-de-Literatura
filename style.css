@@ -150,3 +150,65 @@ footer {
         align-self: flex-start;
     }
 }
+/* Estilo geral da seção */
+.tab-container {
+    background-color: #E3F2FD;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tab {
+    display: flex;
+    justify-content: space-around;
+    background-color: #795548;
+}
+
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.tab button:hover {
+    background-color: #D7C67E;
+}
+
+.tab button.active {
+    background-color: #795548;
+    color: #fff;
+}
+
+.tabcontent {
+    display: none;
+    padding: 15px;
+    background-color: #E3F2FD;
+    border-top: 1px solid #795548;
+    color: #333;
+}
+
+.tabcontent h3 {
+    color: #795548;
+}
+
+/* Estilos específicos para dispositivos móveis */
+@media (max-width: 600px) {
+    .tab {
+        flex-direction: column;
+    }
+
+    .tab button {
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .tabcontent {
+        padding: 10px;
+    }
+}
